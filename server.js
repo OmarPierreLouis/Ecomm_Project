@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(express.urlencoded({
     extended: true
 }));
-// require('./server/routes/product.routes')(app);
+require('./server/routes/product.routes')(app);
 require('./server/config/mongoose.config')
 
 

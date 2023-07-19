@@ -1,32 +1,31 @@
 const mongoose = require('mongoose'); //Mongoose connection
 // Purpose of this file is to describe how our  collection(table) should look. 
 const ProductSchema = new mongoose.Schema({
-    name: { //Each Key will represent a catagory in our collection
-        type: String,
-        required: [true, "Please Enter Your Product's Name"],
-        minlength: [3, "Must be at least 3 charaters!"]
-    },
-
-    type: { //Each Key will represent a catagory in our collection
-        type: String,
-        required: [true, "Please Enter Your Type of Product"],
-        minlength: [3, "Must be at least 3 charaters!"]
-    },
-    description: { //Each Key will represent a catagory in our collection
-        type: String,
-        required: [true, "Please Describe Your Product"],
-        minlength: [3, "Must be at least 3 charaters!"]
-    },
-    skill: { //Each Key will represent a catagory in our collection
-        type: String
-    },
-    skill2: { //Each Key will represent a catagory in our collection
-        type: String
-    },
-    skill3: { //Each Key will represent a catagory in our collection
-        type: String
-    }
-})
+    name: {
+    //Each Key will represent a catagory in our collection
+    type: String,
+    // required: [true, "Please Enter Your Product's Name"],
+    // minlength: [3, "Must be at least 3 charaters!"]
+},
+    price: {
+    //Each Key will represent a catagory in our collection
+    type: Number,
+    type: String,
+    required: [true, "Please Name Your Price"],
+    // minlength: [3, "Must be at least 3 charaters!"]
+},
+    color: {
+    //Each Key will represent a catagory in our collection
+    type: String,
+    required: [true, "Please Describe Your Product"],
+    // minlength: [3, "Must be at least 3 charaters!"]
+},
+    qty: {
+    //Each Key will represent a catagory in our collection
+    type: Number,
+    required: [true, "Quantity Must Be Greater Than 0"]
+},
+});
 
 
 

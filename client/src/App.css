@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+/************************** Nav Bar  **************************************************/
+
+/* .btn-group .dropdown-toggle {
+  border: none;
+} */
+.profile-menu
+{
+  display: flex;
+  justify-content: space-evenly; 
+  text-align: center;
+  
+}
+/* .socials
+{
+  display: flex;
+  justify-content: space-evenly; 
+  text-align: center;
+  
+} */
+
+.icon{
+  padding-top:5px;
+  padding-right:5px;
+}
+/* .navbar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} */
