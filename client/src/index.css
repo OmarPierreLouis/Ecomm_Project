@@ -12,3 +12,33 @@ code {
     monospace;
 }
 
+.nav-link-home {
+color:white;
+padding-right: 10px;
+text-decoration: none;
+}
+.nav-link-Benefits {
+color:white;
+padding-right: 10px;
+text-decoration: none;
+}
+.nav-link-Reviews {
+color:white;
+text-decoration: none;
+
+}
+
+/* Social Media Icons */
+
+.bi-bi-instagram{
+  padding-right:10px;
+}
+.bi-bi-twitter{
+  padding-right:10px;
+}
+.bi-bi-youtube{
+  padding-right:10px;
+}
+.bi-bi-fill{
+  padding-right:10px;
+}

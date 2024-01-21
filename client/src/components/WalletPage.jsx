@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ShowCard = () => {
+const WalletPage = () => {
     return (
         <>
             
@@ -10,4 +10,4 @@ const ShowCard = () => {
 
 
 
-export default ShowCard;
+export default WalletPage;

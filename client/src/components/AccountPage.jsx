@@ -1,10 +1,10 @@
 import React from "react";
 
-const ShowShip = () => {
+const AccountPage = () => {
     return (
         <>
         </>
     )
 };
 
-export default ShowShip;
+export default AccountPage;
