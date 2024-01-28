@@ -10,7 +10,7 @@ import OrderPage from "./components/OrderPage";
 function App() {
   return (
     <BrowserRouter>
-      <div class="App">
+      <div className="App">
         <nav class="navbar fixed-top navbar-dark bg-primary">
           <div class="nav-links">
             <a class="navbar-brand" href="/">
@@ -129,10 +129,6 @@ function App() {
             </svg>
           </div>
         </nav>
-        <h1>
-          This H1 element gets my text showing on landing page, need to figure
-          out why
-        </h1>
         <Switch>
           <Route exact path="/">
             <LandingPage></LandingPage>
