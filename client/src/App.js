@@ -1,10 +1,15 @@
 import "./App.css";
-import { /*Router,*/ Route, /*Link,*/ BrowserRouter, Switch } from "react-router-dom";
+import {
+  /*Router,*/ Route,
+  /*Link,*/ BrowserRouter,
+  Switch,
+  useNavigate,
+} from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import OrderPage from "./components/OrderPage";
 // import ShowCart from "./components/ShowCart";
 // import AddressPage from "./components/AddressPage";
-// import WalletPage from "./components/WalletPage"; 
+// import WalletPage from "./components/WalletPage";
 // import AccountPage from "./components/AccountPage";
 
 function App() {
@@ -26,7 +31,7 @@ function App() {
               </svg>
               Soundbeam
             </a>
-            <a class="nav-link-home" href="/api/product">
+            <a class="nav-link-home" href="/">
               Home
             </a>
             <a class="nav-link-Benefits" href="">
@@ -133,7 +138,7 @@ function App() {
           <Route exact path="/">
             <LandingPage></LandingPage>
           </Route>
-          <Route exact path="/api/product/:id">
+          <Route exact path="/api/product">
             <OrderPage></OrderPage>
           </Route>
         </Switch>
