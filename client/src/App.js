@@ -4,10 +4,11 @@ import {
   /*Link,*/ BrowserRouter,
   Switch,
   useNavigate,
+  useState,
 } from "react-router-dom";
 import LandingPage from "./components/LandingPage";
 import OrderPage from "./components/OrderPage";
-// import ShowCart from "./components/ShowCart";
+import ShowCart from "./components/ShowCart";
 // import AddressPage from "./components/AddressPage";
 // import WalletPage from "./components/WalletPage";
 // import AccountPage from "./components/AccountPage";
@@ -16,9 +17,9 @@ function App() {
   return (
     <BrowserRouter>
       <div className="App">
-        <nav class="navbar fixed-top navbar-dark bg-primary">
-          <div class="nav-links">
-            <a class="navbar-brand" href="/">
+        <nav className="navbar fixed-top navbar-dark bg-primary">
+          <div className="nav-links">
+            <a className="navbar-brand" href="/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -31,19 +32,18 @@ function App() {
               </svg>
               Soundbeam
             </a>
-            <a class="nav-link-home" href="/">
+            <a className="nav-link-home" href="/">
               Home
             </a>
-            <a class="nav-link-Benefits" href="">
+            <a className="nav-link-Benefits" href="">
               Benefits
             </a>
-            <a class="nav-link-Reviews" href="">
+            <a className="nav-link-Reviews" href="">
               Reviews
             </a>
           </div>
-
-          <div class="profile-menu">
-            <div class="icon">
+          <div className="profile-menu">
+            <div className="icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="25"
@@ -59,39 +59,40 @@ function App() {
                 />
               </svg>
             </div>
-            <div class="dropdown-open">
+            <div className="dropdown-open">
               <button
-                class="btn btn-secondary dropdown-toggle"
+                className="btn btn-secondary dropdown-toggle"
                 type="button"
                 id="dropdownMenu5"
                 data-toggle="dropdown"
                 aria-haspopup="true"
-                aria-expanded="false"
-              ></button>
-              <div class="dropdown-menu">
-                <a class="dropdown-item" href="#!">
-                  My Orders
-                </a>
-                <a class="dropdown-item" href="#!">
-                  My Addresses
-                </a>
-                <a class="dropdown-item" href="#!">
-                  My Wallet
-                </a>
-                <a class="dropdown-item" href="#!">
-                  My Subscriptions
-                </a>
-                <a class="dropdown-item" href="#!">
-                  My Account
-                </a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#!">
-                  Logout
-                </a>
-              </div>
+                aria-expanded="false">
+              </button>
+              <Dropdown />
+                {/* <div className="dropdown-menu">
+                  <a className="dropdown-item" href="/">
+                    My Orders
+                  </a>
+                  <a className="dropdown-item" href="/">
+                    My Addresses
+                  </a>
+                  <a className="dropdown-item" href="/">
+                    My Wallet
+                  </a>
+                  <a className="dropdown-item" href="/">
+                    My Subscriptions
+                  </a>
+                  <a className="dropdown-item" href="/">
+                    My Account
+                  </a>
+                  <div className="dropdown-divider"></div>
+                  <a className="dropdown-item" href="#!">
+                    Logout
+                  </a>
+                </div> */}
             </div>
           </div>
-          <div class="socials">
+          <div className="socials">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -140,6 +141,9 @@ function App() {
           </Route>
           <Route exact path="/api/product">
             <OrderPage></OrderPage>
+          </Route>
+          <Route exact path="/api/edit">
+            <ShowCart></ShowCart>
           </Route>
         </Switch>
       </div>

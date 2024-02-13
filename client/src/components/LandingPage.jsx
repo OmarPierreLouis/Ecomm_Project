@@ -18,22 +18,22 @@ const LandingPage = () => {
                 <div className="quality">
                     <img src="" alt="Icon" />
                     <h3>Title</h3>
-                    <h5>isomkldfnslkdfjslkdjflkjdkfj;kdsjlf</h5>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h5>
                 </div>
                 <div className="bluetooth">
                     <img src="" alt="Icon" />
                     <h3>Title</h3>
-                    <h5>isomkldfnslkdfjslkdjflkjdkfj;kdsjlf</h5>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h5>                
                 </div>
                 <div className="battery">
                     <img src="" alt="Icon" />
                     <h3>Title</h3>
-                    <h5>isomkldfnslkdfjslkdjflkjdkfj;kdsjlf</h5>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h5>                
                 </div>
                 <div className="design">
                     <img src="" alt="Icon" />
                     <h3>Title</h3>
-                    <h5>isomkldfnslkdfjslkdjflkjdkfj;kdsjlf</h5>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h5>                
                 </div>
             </div>
             <div className="featured" style={{ marginTop: "50px" }}>
@@ -53,8 +53,9 @@ const LandingPage = () => {
                     <h1>Music Like You've
                         Never Heard Before
                     </h1>
-                    <p> lkamsdnfdskfnskjdfbsjdbfskdljfbsdjfbiruvbrew</p>
-                    <button>Order Now</button>
+                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h5>                    
+                    <button type="button" onClick={() => navigateToMyRoute(history)}>Order Now
+                    </button>
                 </div>
             </div>
             <div className="reviews" style={{ marginTop: "50px" }}>
