@@ -11,7 +11,6 @@ const ShowCart = () => {
     const handleAdd = () => {
         setCount(count + 1);
     };
-
     const handleSubtract = () => {
         setCount(count - 1);
     };
