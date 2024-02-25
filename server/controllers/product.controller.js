@@ -3,7 +3,7 @@ module.exports.index = (request, response) => {response.json({message: "Hello Wo
 
 module.exports.testProduct = (req, res) => {
     res.json({
-        msg: "This is the Products api project"
+        msg: "This is the Sound Beam Ecomm project"
     })
 };
 module.exports.getAllProduct = (req, res) => {

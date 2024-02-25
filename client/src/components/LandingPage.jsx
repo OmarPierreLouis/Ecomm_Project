@@ -4,7 +4,7 @@ import { useHistory } from "react-router-dom";
 const LandingPage = () => {
     const history = useHistory();
     const navigateToMyRoute = (history) => {
-        history.push("/api/product");
+        history.push("/sb/headphones");
     };
     return (
         <>

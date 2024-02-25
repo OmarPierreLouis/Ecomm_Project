@@ -25,13 +25,13 @@ function App() {
             <LandingPage>
             </LandingPage>
           </Route>
-          <Route exact path="/api/product">
+          <Route exact path="/sb/headphones">
             <OrderPage></OrderPage>
           </Route>
-          <Route exact path="/api/edit">
+          <Route exact path="/sb/cart">
             <ShowCart></ShowCart>
           </Route>
-          <Route exact path="/api/product/new">
+          <Route exact path="/sb/member/account">
             <AccountPage></AccountPage>
           </Route>
         </Switch>

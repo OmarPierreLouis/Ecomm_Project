@@ -9,7 +9,7 @@ const OrderPage = () => {
     history.push("/");
   };
   const navigateToMyCart = (history) => {
-    history.push("/api/edit");
+    history.push("/sb/cart");
   };
   const [count, setCount] = useState(0);
 
