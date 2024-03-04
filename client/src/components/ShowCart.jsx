@@ -14,7 +14,7 @@ const ShowCart = () => {
     const handleSubtract = () => {
         setCount(count - 1);
     };
-    return (
+    return ( 
         <>
             <div className='flex-container' style={{ marginTop: "100px", display: "flex", justifyContent: "center" }}>
                 <h3>My Cart</h3>

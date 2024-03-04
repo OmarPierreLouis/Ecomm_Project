@@ -34,7 +34,7 @@ const Navbar = () => {
             </div>
             <div className="profile-menu">
                 <div className="profile-icon">
-                    <a className="icon-link" href="/api/product/new">
+                    <a className="icon-link" href="/sb/member/account">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="25"
