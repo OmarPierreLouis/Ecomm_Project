@@ -3,9 +3,9 @@ import React from "react";
 const AccountPage = () => {
     return (
         <>
-            <div className="container" style={{ marginTop: "100px" }}>
+            <div className="container" style={{ marginTop: "100px",display: "flex", justifyContent: "center" }} >
                 <div className="left-side">
-                    <div className="profile-icon">
+                    <div className="profile-icon" style={{ marginBottom: "20px" }}>
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="25"
@@ -22,20 +22,26 @@ const AccountPage = () => {
                         </svg>
                     </div>
                     <div className="account-menu">
-                        <a className="nav-link-home" href="/sb/member/address">
-                            My Addresses
-                        </a>
-                        <a className="nav-link-home" href="/sb/member/wallet">
-                            My Wallet
-                        </a>
-                        <a className="nav-link-home" href="/sb/member/account">
-                            My Account
-                        </a>
+                        <div>
+                            <a className="nav-link-home" href="/sb/member/address">
+                                My Addresses
+                            </a>
+                        </div>
+                        <div>
+                            <a className="nav-link-home" href="/sb/member/wallet">
+                                My Wallet
+                            </a>
+                        </div>
+                        <div>
+                            <a className="nav-link-home" href="/sb/member/account">
+                                My Account
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className="right-side">
                     <div className="container">
-                        <div className="flex-box-top">
+                        <div className="flex-box-top"  style={{display: "flex", justifyContent: "center" }}>
                             <div className="upper">
                                 <h2>Account</h2>
                                 <p>View and edit your personal info below</p>

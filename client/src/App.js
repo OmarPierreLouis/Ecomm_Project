@@ -11,8 +11,8 @@ import Navbar from "./components/Navbar";
 import OrderPage from "./components/OrderPage";
 import ShowCart from "./components/ShowCart";
 import AccountPage from "./components/AccountPage";
-// import AddressPage from "./components/AddressPage";
-// import WalletPage from "./components/WalletPage";
+import AddressPage from "./components/AddressPage";
+import WalletPage from "./components/WalletPage";
 // import AccountPage from "./components/AccountPage";
 
 function App() {
@@ -33,6 +33,12 @@ function App() {
           </Route>
           <Route exact path="/sb/member/account">
             <AccountPage></AccountPage>
+          </Route>
+          <Route exact path="/sb/member/address">
+            <AddressPage></AddressPage>
+          </Route>
+          <Route exact path="/sb/member/wallet">
+            <WalletPage></WalletPage>
           </Route>
         </Switch>
       </div>

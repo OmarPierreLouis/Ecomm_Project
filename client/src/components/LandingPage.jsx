@@ -21,7 +21,7 @@ const LandingPage = () => {
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h5>
                 </div>
                 <div className="bluetooth">
-                    <img src="" alt="Icon" />
+                    <img src="" alt="Icon" />≠
                     <h3>Title</h3>
                     <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </h5>                
                 </div>
